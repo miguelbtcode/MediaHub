@@ -7,7 +7,7 @@
 
     <!-- Information Library -->
     <PackageId>MediaHub</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.4</Version>
     <Authors>miguelbtcode</Authors>
     <Description>MediaHub is a lightweight implementation of the mediator pattern for .NET.</Description>
     <PackageTags>mediator;cqrs;dotnet</PackageTags>
@@ -16,12 +16,10 @@
     <RepositoryUrl>https://github.com/miguelbtcode/MediaHub</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="\" />
-    <None Include="../../LICENSE" Pack="true" PackagePath=""/>
   </ItemGroup>
 
   <!-- Dependencies -->

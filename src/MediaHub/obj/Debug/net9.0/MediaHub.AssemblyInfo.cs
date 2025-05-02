@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright (c) 2025 Miguel Barreto")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("MediaHub is a lightweight implementation of the mediator pattern for .NET.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b12e9b58b5e6bc083f03ec89b508a503da37a4d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb2862e327e4a9b16bdd0302d114c61bfb0e7967")]
 [assembly: System.Reflection.AssemblyProductAttribute("MediaHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MediaHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
