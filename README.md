@@ -1,7 +1,7 @@
 # MediaHub
 
 [![NuGet](https://img.shields.io/nuget/v/MediaHub.svg)](https://www.nuget.org/packages/MediaHub/)
-[![Build Status](https://github.com/your-username/MediaHub/workflows/build/badge.svg)](https://github.com/your-username/MediaHub/actions)
+[![Build Status](https://github.com/miguelbtcode/MediaHub/workflows/build/badge.svg)](https://github.com/miguelbtcode/MediaHub/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 MediaHub is a lightweight and efficient implementation of the Mediator pattern for .NET applications, designed to facilitate communication between components while maintaining low coupling.
