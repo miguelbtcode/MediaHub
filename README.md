@@ -1,4 +1,4 @@
-<div style="text-align:left; border-radius: 500px; overflow: hidden;">
+<div style="text-align:left; border-radius: 500px; overflow: hidden; transform: scale(1.2); transition: transform 0.3s ease;">
   <img src="https://github.com/miguelbtcode/MediaHub/blob/main/resources/mediahub-logo.png" alt="MediaHub logo" width="120" />
 </div>
 
