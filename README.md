@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/miguelbtcode/MediaHub/blob/v1.0.6.2/resources/mediahub-logo.png" alt="MediaHub logo" width="120"/>
+</p>
+
 # MediaHub
 
 [![NuGet](https://img.shields.io/nuget/v/MediaHub.svg)](https://www.nuget.org/packages/MediaHub/)
