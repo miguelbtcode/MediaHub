@@ -92,7 +92,7 @@ namespace MediaHub.Tests
         // Test classes
         public class TestRequest : IRequest<string>
         {
-            public string Value { get; set; }
+            public string Value { get; set; } = string.Empty;
         }
         
         public class TestRequestHandler : IRequestHandler<TestRequest, string>
@@ -105,7 +105,7 @@ namespace MediaHub.Tests
         
         public class TestVoidRequest : IRequest
         {
-            public string Value { get; set; }
+            public string Value { get; set; } = string.Empty;
         }
         
         public class TestVoidRequestHandler : IRequestHandler<TestVoidRequest>

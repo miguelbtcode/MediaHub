@@ -40,7 +40,7 @@ namespace MediaHub.Behaviors
             {
                 stopwatch.Stop();
                 _logger.LogError(ex, "Error handling {RequestName} after {ElapsedMilliseconds}ms", requestName, stopwatch.ElapsedMilliseconds);
-                throw;
+                throw new InvalidOperationException($"An error occurred while processing the request '{requestName}' after {stopwatch.ElapsedMilliseconds}ms.", ex);
             }
         }
     }
