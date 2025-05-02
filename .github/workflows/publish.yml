@@ -16,6 +16,11 @@ jobs:
       with:
         dotnet-version: 9.0.x
     
+    - name: Clean output directories
+      run: |
+        rm -rf ./nupkgs
+        mkdir -p ./nupkgs
+    
     - name: Restore dependencies
       run: dotnet restore
     
@@ -25,8 +30,18 @@ jobs:
     - name: Test
       run: dotnet test --configuration Release --no-build
     
+    - name: Check project version
+      run: grep -A 3 "<Version>" src/MediaHub/MediaHub.csproj
+    
     - name: Pack
-      run: dotnet pack src/MediaHub/MediaHub.csproj --configuration Release --no-build --output nupkgs
+      run: |
+        TAG_VERSION=${GITHUB_REF#refs/tags/v}
+        dotnet pack src/MediaHub/MediaHub.csproj --configuration Release -p:Version=$TAG_VERSION --no-build --output nupkgs
+    
+    - name: Check package version
+      run: |
+        echo "Generated packages:"
+        ls -la ./nupkgs
     
     - name: Push to NuGet
       run: dotnet nuget push nupkgs/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
