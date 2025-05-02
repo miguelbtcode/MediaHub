@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="https://github.com/miguelbtcode/MediaHub/blob/v1.0.6.2/resources/mediahub-logo.png" alt="MediaHub logo" width="120"/>
-</p>
+<div style="text-align:left; border-radius: 500px; overflow: hidden;">
+  <img src="https://github.com/miguelbtcode/MediaHub/blob/main/resources/mediahub-logo.png" alt="MediaHub logo" width="120" />
+</div>
 
 # MediaHub
 
