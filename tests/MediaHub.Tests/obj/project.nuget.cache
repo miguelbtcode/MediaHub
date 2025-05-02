@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ifNOPmkG8DY=",
+  "dgSpecHash": "neC6jKphjrQ=",
   "success": true,
   "projectFilePath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/MediaHub.Tests.csproj",
   "expectedPackageFiles": [
@@ -8,11 +8,6 @@
     "/Users/miguelbarreto/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
     "/Users/miguelbarreto/.nuget/packages/fluentassertions/8.2.0/fluentassertions.8.2.0.nupkg.sha512",
     "/Users/miguelbarreto/.nuget/packages/microsoft.codecoverage/17.12.0/microsoft.codecoverage.17.12.0.nupkg.sha512",
-    "/Users/miguelbarreto/.nuget/packages/microsoft.entityframeworkcore/9.0.4/microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
-    "/Users/miguelbarreto/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.4/microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",
-    "/Users/miguelbarreto/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.4/microsoft.entityframeworkcore.analyzers.9.0.4.nupkg.sha512",
-    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.4/microsoft.extensions.caching.abstractions.9.0.4.nupkg.sha512",
-    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.caching.memory/9.0.4/microsoft.extensions.caching.memory.9.0.4.nupkg.sha512",
     "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.4/microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",
     "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.4/microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512",
     "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.logging/9.0.4/microsoft.extensions.logging.9.0.4.nupkg.sha512",

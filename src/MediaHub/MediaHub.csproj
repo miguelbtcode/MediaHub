@@ -7,7 +7,7 @@
 
     <!-- Information Library -->
     <PackageId>MediaHub</PackageId>
-    <Version>1.0.5</Version>
+    <Version>1.0.6.1</Version>
     <Authors>miguelbtcode</Authors>
     <Description>MediaHub is a lightweight implementation of the mediator pattern for .NET.</Description>
     <PackageTags>mediator;cqrs;dotnet</PackageTags>
@@ -24,7 +24,6 @@
 
   <!-- Dependencies -->
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
   </ItemGroup>

@@ -6,6 +6,7 @@
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.AssemblyInfoInputs.cache
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.AssemblyInfo.cs
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.csproj.CoreCompileInputs.cache
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.sourcelink.json
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/refint/MediaHub.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.pdb

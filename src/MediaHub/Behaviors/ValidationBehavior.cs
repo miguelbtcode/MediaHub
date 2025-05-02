@@ -1,9 +1,5 @@
 using MediaHub.Core;
 using MediaHub.Validation;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace MediaHub.Behaviors
 {

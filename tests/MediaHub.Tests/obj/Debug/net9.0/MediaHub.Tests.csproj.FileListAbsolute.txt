@@ -1,10 +1,5 @@
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/.msCoverageSourceRootsMapping_MediaHub.Tests
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_MediaHub.Tests
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.csproj.AssemblyReference.cache
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.AssemblyInfoInputs.cache
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.AssemblyInfo.cs
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.csproj.CoreCompileInputs.cache
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/xunit.runner.visualstudio.testadapter.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/xunit.runner.reporters.netcoreapp10.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/xunit.runner.utility.netcoreapp10.dll
@@ -15,10 +10,6 @@
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Castle.Core.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/FluentAssertions.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
-/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
@@ -109,6 +100,12 @@
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/MediaHub.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/bin/Debug/net9.0/MediaHub.pdb
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.csproj.AssemblyReference.cache
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.AssemblyInfoInputs.cache
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.AssemblyInfo.cs
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.csproj.CoreCompileInputs.cache
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.sourcelink.json
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.15282A7B.Up2Date
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/MediaHub.Tests.dll
 /Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/obj/Debug/net9.0/refint/MediaHub.Tests.dll
