@@ -7,7 +7,7 @@
 
     <!-- Information Library -->
     <PackageId>MediaHub</PackageId>
-    <Version>1.0.6.1</Version>
+    <Version>1.0.6.2</Version>
     <Authors>miguelbtcode</Authors>
     <Description>MediaHub is a lightweight implementation of the mediator pattern for .NET.</Description>
     <PackageTags>mediator;cqrs;dotnet</PackageTags>
@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="\" />
+    <None Include="../../resources/mediahub-logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <!-- Dependencies -->
