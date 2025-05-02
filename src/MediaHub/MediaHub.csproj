@@ -16,10 +16,12 @@
     <RepositoryUrl>https://github.com/miguelbtcode/MediaHub</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="\" />
+    <None Include="../../LICENSE" Pack="true" PackagePath=""/>
   </ItemGroup>
 
   <!-- Dependencies -->
@@ -32,5 +34,12 @@
   <!-- Git version -->
   <PropertyGroup>
     <Version>$(GitVersion)</Version>
+  </PropertyGroup>
+
+  <!-- License -->
+  <PropertyGroup>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright (c) 2025 Miguel Barreto</Copyright>
   </PropertyGroup>
 </Project>
