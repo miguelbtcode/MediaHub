@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "8OS2vNAOZdQ=",
+  "success": true,
+  "projectFilePath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/MediaHub.csproj",
+  "expectedPackageFiles": [
+    "/Users/miguelbarreto/.nuget/packages/microsoft.entityframeworkcore/9.0.4/microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.4/microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.4/microsoft.entityframeworkcore.analyzers.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.4/microsoft.extensions.caching.abstractions.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.caching.memory/9.0.4/microsoft.extensions.caching.memory.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.4/microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.4/microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.logging/9.0.4/microsoft.extensions.logging.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.4/microsoft.extensions.logging.abstractions.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.options/9.0.4/microsoft.extensions.options.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.primitives/9.0.4/microsoft.extensions.primitives.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

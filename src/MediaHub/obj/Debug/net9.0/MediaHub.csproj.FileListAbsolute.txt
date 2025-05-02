@@ -1,0 +1,12 @@
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/bin/Debug/net9.0/MediaHub.deps.json
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/bin/Debug/net9.0/MediaHub.dll
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/bin/Debug/net9.0/MediaHub.pdb
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.csproj.AssemblyReference.cache
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.GeneratedMSBuildEditorConfig.editorconfig
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.AssemblyInfoInputs.cache
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.AssemblyInfo.cs
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.csproj.CoreCompileInputs.cache
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.dll
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/refint/MediaHub.dll
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/MediaHub.pdb
+/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/Debug/net9.0/ref/MediaHub.dll
