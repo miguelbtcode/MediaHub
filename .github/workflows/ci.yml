@@ -21,9 +21,10 @@ jobs:
     - name: Extract version from tag
       id: get_version
       run: |
-        TAG_VERSION=${GITHUB_REF#refs/tags/v}
-        echo "Extracted version: $TAG"
-        echo "version=$TAG" >> $GITHUB_OUTPUT
+        TAG=${GITHUB_REF#refs/tags/}
+        CLEAN_TAG=${TAG#v}  # remueve prefijo 'v'
+        echo "Extracted version: $CLEAN_TAG"
+        echo "version=$CLEAN_TAG" >> $GITHUB_OUTPUT
 
     - name: Clean output directories
       run: |
@@ -43,7 +44,7 @@ jobs:
       run: |
         dotnet pack src/MediaHub/MediaHub.csproj \
           --configuration Release \
-          -p:Version=$TAG_VERSION \
+          -p:Version=${{ steps.get_version.outputs.version }} \
           --no-build \
           --output ./nupkgs
 
