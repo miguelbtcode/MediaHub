@@ -1,4 +1,4 @@
-namespace MediaHub.Contracts.Pipelines;
+namespace MediaHub.Pipelines;
 
 /// <summary>
 /// Contract for a behavior that handles validation of requests

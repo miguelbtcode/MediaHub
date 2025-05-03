@@ -1,4 +1,4 @@
-namespace MediaHub.Contracts;
+namespace MediaHub;
 
 /// <summary>
 /// Marker interface for all requests.

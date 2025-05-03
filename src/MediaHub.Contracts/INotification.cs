@@ -1,3 +1,3 @@
-namespace MediaHub.Contracts;
+namespace MediaHub;
 
 public interface INotification { }

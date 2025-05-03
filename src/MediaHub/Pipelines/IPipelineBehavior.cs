@@ -1,4 +1,4 @@
-namespace MediaHub.Contracts.Pipelines;
+namespace MediaHub.Pipelines;
 
  /// <summary>
 /// Pipeline behavior for request processing

@@ -4,6 +4,30 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+     <!-- Information Library -->
+    <PackageId>MediaHub.Contracts</PackageId>
+    <Authors>miguelbtcode</Authors>
+    <Description>Contracts package for requests, responses, and notifications from MediaHub.</Description>
+    <PackageTags>mediator;cqrs;dotnet;request;response;queries;commands;notifications</PackageTags>
+    <PackageProjectUrl>https://github.com/miguelbtcode/MediaHub/tree/main/src/MediaHub.Contracts</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/miguelbtcode/MediaHub</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>mediahub-logo.png</PackageIcon>
+    <RootNamespace>MediaHub</RootNamespace>
+    <version>1.0.0</version>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+    <None Include="../../resources/mediahub-logo.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <!-- License -->
+  <PropertyGroup>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright (c) 2025 Miguel Barreto</Copyright>
+  </PropertyGroup>
 </Project>
