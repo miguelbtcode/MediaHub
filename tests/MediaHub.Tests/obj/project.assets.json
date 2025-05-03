@@ -594,9 +594,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "MediaHub.Contracts": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.4",
-          "Microsoft.Extensions.Logging": "9.0.4"
+          "Microsoft.Extensions.Logging": "9.0.4",
+          "miguelbtcode.MediaHub.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MediaHub.dll": {}
@@ -605,14 +605,14 @@
           "bin/placeholder/MediaHub.dll": {}
         }
       },
-      "MediaHub.Contracts/1.0.0": {
+      "miguelbtcode.MediaHub.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "bin/placeholder/MediaHub.Contracts.dll": {}
+          "bin/placeholder/miguelbtcode.MediaHub.Contracts.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MediaHub.Contracts.dll": {}
+          "bin/placeholder/miguelbtcode.MediaHub.Contracts.dll": {}
         }
       }
     }
@@ -1472,7 +1472,7 @@
       "path": "../../src/MediaHub/MediaHub.csproj",
       "msbuildProject": "../../src/MediaHub/MediaHub.csproj"
     },
-    "MediaHub.Contracts/1.0.0": {
+    "miguelbtcode.MediaHub.Contracts/1.0.0": {
       "type": "project",
       "path": "../../src/MediaHub.Contracts/MediaHub.Contracts.csproj",
       "msbuildProject": "../../src/MediaHub.Contracts/MediaHub.Contracts.csproj"

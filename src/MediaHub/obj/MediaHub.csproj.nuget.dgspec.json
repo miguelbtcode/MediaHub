@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj",
-        "projectName": "MediaHub.Contracts",
+        "projectName": "miguelbtcode.MediaHub.Contracts",
         "projectPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj",
         "packagesPath": "/Users/miguelbarreto/.nuget/packages/",
         "outputPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/obj/",

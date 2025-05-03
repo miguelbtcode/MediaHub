@@ -113,14 +113,14 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "MediaHub.Contracts/1.0.0": {
+      "miguelbtcode.MediaHub.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
-          "bin/placeholder/MediaHub.Contracts.dll": {}
+          "bin/placeholder/miguelbtcode.MediaHub.Contracts.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MediaHub.Contracts.dll": {}
+          "bin/placeholder/miguelbtcode.MediaHub.Contracts.dll": {}
         }
       }
     }
@@ -360,7 +360,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MediaHub.Contracts/1.0.0": {
+    "miguelbtcode.MediaHub.Contracts/1.0.0": {
       "type": "project",
       "path": "../MediaHub.Contracts/MediaHub.Contracts.csproj",
       "msbuildProject": "../MediaHub.Contracts/MediaHub.Contracts.csproj"
@@ -368,9 +368,9 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "MediaHub.Contracts >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 9.0.4",
-      "Microsoft.Extensions.Logging >= 9.0.4"
+      "Microsoft.Extensions.Logging >= 9.0.4",
+      "miguelbtcode.MediaHub.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
