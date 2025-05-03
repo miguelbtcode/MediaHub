@@ -1,7 +1,3 @@
-<div style="text-align:left; border-radius: 500px; overflow: hidden;">
-  <img src="https://github.com/miguelbtcode/MediaHub/blob/main/resources/mediahub-logo.png" alt="MediaHub logo" width="130" />
-</div>
-
 # MediaHub
 
 [![NuGet](https://img.shields.io/nuget/v/MediaHub.svg)](https://www.nuget.org/packages/MediaHub/)
