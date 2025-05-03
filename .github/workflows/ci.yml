@@ -25,19 +25,10 @@ jobs:
         CLEAN_TAG=${TAG_VERSION#v}  # remueve prefijo 'v'
         echo "Extracted version: $CLEAN_TAG"
         echo "version=$CLEAN_TAG" >> $GITHUB_OUTPUT
-        echo "version=$CLEAN_TAG" >> $GITHUB_ENV
-
-    - name: Update .csproj version
-      run: |
-        # Actualizar la versión en el archivo .csproj
-        sed -i "s|<Version>.*</Version>|<Version>${{ env.version }}</Version>|" src/MediaHub/MediaHub.csproj
-        cat src/MediaHub/MediaHub.csproj  # Mostrar el .csproj actualizado
-
     - name: Clean output directories
       run: |
         rm -rf ./nupkgs
         mkdir -p ./nupkgs
-
     - name: Restore dependencies
       run: dotnet restore
 
@@ -54,7 +45,6 @@ jobs:
           -p:Version=${{ steps.get_version.outputs.version }} \
           --no-build \
           --output ./nupkgs
-
     - name: Check generated packages
       run: ls -lh ./nupkgs
 
