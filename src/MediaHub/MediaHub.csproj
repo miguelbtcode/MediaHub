@@ -30,7 +30,7 @@
 
   <!-- Git version -->
   <PropertyGroup>
-    <Version>$(GitVersion)</Version>
+    <Version>$(Version)</Version>
   </PropertyGroup>
 
   <!-- License -->
