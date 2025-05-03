@@ -21,7 +21,7 @@ jobs:
     - name: Extract version from tag
       id: get_version
       run: |
-        TAG=${GITHUB_REF#refs/tags/}
+        TAG_VERSION=${GITHUB_REF#refs/tags/}
         CLEAN_TAG=${TAG#v}  # remueve prefijo 'v'
         echo "Extracted version: $CLEAN_TAG"
         echo "version=$CLEAN_TAG" >> $GITHUB_OUTPUT
