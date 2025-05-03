@@ -112,6 +112,16 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "MediaHub.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/MediaHub.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MediaHub.Contracts.dll": {}
+        }
       }
     }
   },
@@ -349,10 +359,16 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "MediaHub.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MediaHub.Contracts/MediaHub.Contracts.csproj",
+      "msbuildProject": "../MediaHub.Contracts/MediaHub.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "MediaHub.Contracts >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 9.0.4",
       "Microsoft.Extensions.Logging >= 9.0.4"
     ]
@@ -381,7 +397,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj": {
+              "projectPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

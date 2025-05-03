@@ -1,7 +1,9 @@
 using FluentAssertions;
 using MediaHub.Core;
 using MediaHub.DependencyInjection;
+using MediaHub.Contracts.Pipelines;
 using Microsoft.Extensions.DependencyInjection;
+using MediaHub.Contracts;
 
 namespace MediaHub.Tests
 {
@@ -103,6 +105,96 @@ namespace MediaHub.Tests
             executionOrder[2].Should().Be("Global Before AnotherRequest");
             executionOrder[3].Should().Be("Handler AnotherRequest");
         }
+
+        [Fact]
+        public async Task Send_WithLogingPipelineBehavior_ShouldExecuteBehavior()
+        {
+            // Arrange
+            var executionOrder = new List<string>();
+            
+            var services = new ServiceCollection();
+            services.AddMediaHub(config => config.RegisterServicesFromAssemblies(typeof(PipelineBehaviorTests).Assembly));
+            services.AddTransient<IRequestHandler<TestRequest, string>, TestRequestHandler>();
+            services.AddTransient<ILoggingPipelineBehavior<TestRequest, string>, TestLoggingPipelineBehavior>();
+            services.AddTransient<IPipelineBehavior<TestRequest, string>>(sp => 
+                sp.GetRequiredService<ILoggingPipelineBehavior<TestRequest, string>>());
+            
+            // Store execution order in a singleton for verification
+            services.AddSingleton(executionOrder);
+            
+            var provider = services.BuildServiceProvider();
+            var mediator = provider.GetRequiredService<IMediator>();
+            var request = new TestRequest { Value = "Test" };
+            
+            // Act
+            var response = await mediator.Send(request);
+            
+            // Assert
+            response.Should().Be("Test Handled");
+            executionOrder.Should().HaveCount(3);
+            executionOrder[0].Should().Be("Logging Before TestRequest");
+            executionOrder[1].Should().Be("Handler TestRequest");
+            executionOrder[2].Should().Be("Logging After TestRequest");
+        }
+
+        [Fact]
+        public async Task Send_WithValidationPipelineBehavior_ShouldExecuteBehavior()
+        {
+            // Arrange
+            var executionOrder = new List<string>();
+            
+            var services = new ServiceCollection();
+            services.AddMediaHub(config => config.RegisterServicesFromAssemblies(typeof(PipelineBehaviorTests).Assembly));
+            services.AddTransient<IRequestHandler<TestRequest, string>, TestRequestHandler>();
+            services.AddTransient<IValidationPipelineBehavior<TestRequest, string>, TestValidationPipelineBehavior>();
+            services.AddTransient<IPipelineBehavior<TestRequest, string>>(sp => 
+                sp.GetRequiredService<IValidationPipelineBehavior<TestRequest, string>>());
+            
+            // Store execution order in a singleton for verification
+            services.AddSingleton(executionOrder);
+            
+            var provider = services.BuildServiceProvider();
+            var mediator = provider.GetRequiredService<IMediator>();
+            var request = new TestRequest { Value = "Test" };
+            
+            // Act
+            var response = await mediator.Send(request);
+            
+            // Assert
+            response.Should().Be("Test Handled");
+            executionOrder.Should().HaveCount(3);
+            executionOrder[0].Should().Be("Validation Before TestRequest");
+            executionOrder[1].Should().Be("Handler TestRequest");
+            executionOrder[2].Should().Be("Validation After TestRequest");
+        }
+
+        [Fact]
+        public async Task Publish_WithNotificationPipelineBehavior_ShouldExecuteBehavior()
+        {
+            // Arrange
+            var executionOrder = new List<string>();
+            
+            var services = new ServiceCollection();
+            services.AddMediaHub(config => config.RegisterServicesFromAssemblies(typeof(PipelineBehaviorTests).Assembly));
+            services.AddTransient<INotificationHandler<TestNotification>, TestNotificationHandler>();
+            services.AddTransient<INotificationPipelineBehavior<TestNotification>, TestNotificationPipelineBehavior>();
+            
+            // Store execution order in a singleton for verification
+            services.AddSingleton(executionOrder);
+            
+            var provider = services.BuildServiceProvider();
+            var mediator = provider.GetRequiredService<IPublisher>();
+            var notification = new TestNotification { Message = "Test Notification" };
+            
+            // Act
+            await mediator.Publish(notification);
+            
+            // Assert
+            executionOrder.Should().HaveCount(3);
+            executionOrder[0].Should().Be("Notification Behavior Before");
+            executionOrder[1].Should().Be("Notification Handler");
+            executionOrder[2].Should().Be("Notification Behavior After");
+        }
         
         // Test request & handler classes
         public class TestRequest : IRequest<string>
@@ -144,6 +236,27 @@ namespace MediaHub.Tests
             {
                 _executionOrder.Add("Handler AnotherRequest");
                 return Task.FromResult(request.Value * 2);
+            }
+        }
+
+        public class TestNotification : INotification
+        {
+            public string Message { get; set; }
+        }
+
+        public class TestNotificationHandler : INotificationHandler<TestNotification>
+        {
+            private readonly List<string> _executionOrder;
+            
+            public TestNotificationHandler(List<string> executionOrder)
+            {
+                _executionOrder = executionOrder;
+            }
+            
+            public Task Handle(TestNotification notification, CancellationToken cancellationToken)
+            {
+                _executionOrder.Add("Notification Handler");
+                return Task.CompletedTask;
             }
         }
         
@@ -232,6 +345,68 @@ namespace MediaHub.Tests
             {
                 _executionOrder.Add("Global Before AnotherRequest");
                 return await next();
+            }
+        }
+
+        // Specialized pipeline behaviors
+        public class TestLoggingPipelineBehavior : ILoggingPipelineBehavior<TestRequest, string>
+        {
+            private readonly List<string> _executionOrder;
+            
+            public TestLoggingPipelineBehavior(List<string> executionOrder)
+            {
+                _executionOrder = executionOrder;
+            }
+            
+            public async Task<string> Handle(TestRequest request, RequestHandlerDelegate<string> next, CancellationToken cancellationToken)
+            {
+                _executionOrder.Add("Logging Before TestRequest");
+                
+                var response = await next();
+                
+                _executionOrder.Add("Logging After TestRequest");
+                
+                return response;
+            }
+        }
+
+        public class TestValidationPipelineBehavior : IValidationPipelineBehavior<TestRequest, string>
+        {
+            private readonly List<string> _executionOrder;
+            
+            public TestValidationPipelineBehavior(List<string> executionOrder)
+            {
+                _executionOrder = executionOrder;
+            }
+            
+            public async Task<string> Handle(TestRequest request, RequestHandlerDelegate<string> next, CancellationToken cancellationToken)
+            {
+                _executionOrder.Add("Validation Before TestRequest");
+                
+                var response = await next();
+                
+                _executionOrder.Add("Validation After TestRequest");
+                
+                return response;
+            }
+        }
+
+        public class TestNotificationPipelineBehavior : INotificationPipelineBehavior<TestNotification>
+        {
+            private readonly List<string> _executionOrder;
+            
+            public TestNotificationPipelineBehavior(List<string> executionOrder)
+            {
+                _executionOrder = executionOrder;
+            }
+            
+            public async Task Handle(TestNotification notification, NotificationHandlerDelegate next, CancellationToken cancellationToken)
+            {
+                _executionOrder.Add("Notification Behavior Before");
+                
+                await next();
+                
+                _executionOrder.Add("Notification Behavior After");
             }
         }
     }

@@ -1,8 +1,7 @@
+using MediaHub.Contracts;
+using MediaHub.Contracts.Pipelines;
 using MediaHub.Core;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 
 namespace MediaHub.DependencyInjection
@@ -17,6 +16,45 @@ namespace MediaHub.DependencyInjection
         public MediaHubConfiguration(IServiceCollection services)
         {
             _services = services;
+        }
+
+        /// <summary>
+        /// Adds a service to the configuration
+        /// </summary>
+        /// <typeparam name="TService">Service type</typeparam>
+        /// <typeparam name="TImplementation">Implementation type</typeparam>
+        /// <returns>MediaHub configuration</returns>
+        public MediaHubConfiguration AddService<TService, TImplementation>()
+            where TImplementation : class, TService
+            where TService : class
+        {
+            _services.AddTransient<TService, TImplementation>();
+            return this;
+        }
+
+        /// <summary>
+        /// Adds a service to the configuration
+        /// </summary>
+        /// <param name="serviceType">Service type</param>
+        /// <param name="implementationType">Implementation type</param>
+        /// <returns>MediaHub configuration</returns>
+        public MediaHubConfiguration AddService(Type serviceType, Type implementationType)
+        {
+            _services.AddTransient(serviceType, implementationType);
+            return this;
+        }
+
+        /// <summary>
+        /// Adds a service with a factory to the configuration
+        /// </summary>
+        /// <typeparam name="TService">Service type</typeparam>
+        /// <param name="factory">Factory function</param>
+        /// <returns>MediaHub configuration</returns>
+        public MediaHubConfiguration AddServiceFactory<TService>(Func<IServiceProvider, TService> factory)
+            where TService : class
+        {
+            _services.AddTransient(factory);
+            return this;
         }
 
         /// <summary>

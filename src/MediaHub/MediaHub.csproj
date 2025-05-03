@@ -39,4 +39,9 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Copyright (c) 2025 Miguel Barreto</Copyright>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MediaHub.Contracts\MediaHub.Contracts.csproj" />
+  </ItemGroup>
+  
 </Project>

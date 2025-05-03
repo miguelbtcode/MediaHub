@@ -1,4 +1,4 @@
-namespace MediaHub.Core;
+namespace MediaHub.Contracts;
 
 /// <summary>
 /// Unit type for void responses

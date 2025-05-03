@@ -462,11 +462,20 @@
       "xunit.runner.visualstudio/2.8.2": {},
       "MediaHub/1.0.0": {
         "dependencies": {
+          "MediaHub.Contracts": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.4",
           "Microsoft.Extensions.Logging": "9.0.4"
         },
         "runtime": {
           "MediaHub.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MediaHub.Contracts/1.0.0": {
+        "runtime": {
+          "MediaHub.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -656,6 +665,11 @@
       "hashPath": "xunit.runner.visualstudio.2.8.2.nupkg.sha512"
     },
     "MediaHub/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MediaHub.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

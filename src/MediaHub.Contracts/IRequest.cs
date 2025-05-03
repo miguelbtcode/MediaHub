@@ -1,4 +1,4 @@
-namespace MediaHub.Core;
+namespace MediaHub.Contracts;
 
 /// <summary>
 /// Interface for defining a request with a response
