@@ -10,7 +10,7 @@
     <Authors>miguelbtcode</Authors>
     <Description>Contracts package for requests, responses, and notifications from MediaHub.</Description>
     <PackageTags>mediator;cqrs;dotnet;request;response;queries;commands;notifications</PackageTags>
-    <PackageProjectUrl>https://github.com/miguelbtcode/MediaHub/tree/main/src/MediaHub.Contracts</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/miguelbtcode/MediaHub</PackageProjectUrl>
     <RepositoryUrl>https://github.com/miguelbtcode/MediaHub</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
