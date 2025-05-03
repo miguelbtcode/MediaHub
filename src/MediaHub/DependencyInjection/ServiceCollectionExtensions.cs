@@ -1,9 +1,8 @@
 using MediaHub.Core;
 using System.Reflection;
-using MediaHub.Contracts;
 using Microsoft.Extensions.DependencyInjection;
-using MediaHub.Contracts.Pipelines;
 using MediaHub.Abstractions;
+using MediaHub.Pipelines;
 
 namespace MediaHub.DependencyInjection
 {

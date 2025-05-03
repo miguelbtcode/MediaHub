@@ -1,6 +1,4 @@
-using MediaHub.Contracts;
-using MediaHub.Contracts.Pipelines;
-using MediaHub.Core;
+using MediaHub.Pipelines;
 using MediaHub.Validation;
 
 namespace MediaHub.Abstractions;

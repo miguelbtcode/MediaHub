@@ -1,5 +1,3 @@
-using MediaHub.Contracts;
-
 namespace MediaHub.Core;
 
 /// <summary>

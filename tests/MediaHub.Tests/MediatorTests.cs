@@ -1,11 +1,10 @@
 ﻿using FluentAssertions;
 using MediaHub.Core;
 using MediaHub.DependencyInjection;
-using MediaHub.Contracts.Pipelines;
+using MediaHub.Pipelines;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Moq;
-using MediaHub.Contracts;
 
 namespace MediaHub.Tests
 {

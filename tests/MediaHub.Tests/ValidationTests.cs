@@ -3,7 +3,6 @@ using MediaHub.Core;
 using MediaHub.DependencyInjection;
 using MediaHub.Validation;
 using Microsoft.Extensions.DependencyInjection;
-using MediaHub.Contracts;
 using MediaHub.Pipelines;
 
 namespace MediaHub.Tests

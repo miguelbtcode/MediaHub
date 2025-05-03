@@ -1,6 +1,5 @@
-using MediaHub.Contracts;
-using MediaHub.Contracts.Pipelines;
 using MediaHub.Core;
+using MediaHub.Pipelines;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
