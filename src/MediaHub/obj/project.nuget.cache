@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "p/cHvdTQFxA=",
+  "dgSpecHash": "6rPaZgjXRRo=",
   "success": true,
   "projectFilePath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/MediaHub.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,8 @@
     "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.logging/9.0.4/microsoft.extensions.logging.9.0.4.nupkg.sha512",
     "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.4/microsoft.extensions.logging.abstractions.9.0.4.nupkg.sha512",
     "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.options/9.0.4/microsoft.extensions.options.9.0.4.nupkg.sha512",
-    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.primitives/9.0.4/microsoft.extensions.primitives.9.0.4.nupkg.sha512"
+    "/Users/miguelbarreto/.nuget/packages/microsoft.extensions.primitives/9.0.4/microsoft.extensions.primitives.9.0.4.nupkg.sha512",
+    "/Users/miguelbarreto/.nuget/packages/miguelbtcode.mediahub.contracts/1.0.0/miguelbtcode.mediahub.contracts.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

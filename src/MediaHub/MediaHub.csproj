@@ -24,6 +24,7 @@
 
   <!-- Dependencies -->
   <ItemGroup>
+    <PackageReference Include="miguelbtcode.mediahub.contracts" Version="1.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
   </ItemGroup>
@@ -39,9 +40,5 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Copyright (c) 2025 Miguel Barreto</Copyright>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MediaHub.Contracts\MediaHub.Contracts.csproj" />
-  </ItemGroup>
   
 </Project>

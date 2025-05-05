@@ -4,14 +4,14 @@
     "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/tests/MediaHub.Tests/MediaHub.Tests.csproj": {}
   },
   "projects": {
-    "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj": {
+    "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/MediaHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj",
-        "projectName": "miguelbtcode.MediaHub.Contracts",
-        "projectPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj",
+        "projectUniqueName": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/MediaHub.csproj",
+        "projectName": "MediaHub",
+        "projectPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/MediaHub.csproj",
         "packagesPath": "/Users/miguelbarreto/.nuget/packages/",
-        "outputPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/obj/",
+        "outputPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/miguelbarreto/.nuget/NuGet/NuGet.Config"
@@ -43,69 +43,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/MediaHub.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/MediaHub.csproj",
-        "projectName": "MediaHub",
-        "projectPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/MediaHub.csproj",
-        "packagesPath": "/Users/miguelbarreto/.nuget/packages/",
-        "outputPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/miguelbarreto/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net9.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
-            "projectReferences": {
-              "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj": {
-                "projectPath": "/Users/miguelbarreto/GithubProjects/NuggetLibraries/MediaHub/src/MediaHub.Contracts/MediaHub.Contracts.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
@@ -114,6 +51,10 @@
             "Microsoft.Extensions.Logging": {
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "miguelbtcode.mediahub.contracts": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
